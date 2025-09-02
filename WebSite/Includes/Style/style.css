@@ -1,0 +1,413 @@
+/* ======== ESTILO GENERAL ======== */
+
+body {
+    background-image: url('https://wallpapers.com/images/hd/4k-plane-in-the-sky-sraa8sshp7bou1p9.jpg'); 
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 30px 0;
+    padding-bottom: 20px;
+    color: #2c3e50;
+    min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+.container-body-head {
+    width: 100%;
+    box-shadow: 0px 4px 16px rgba(44,62,80,0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    transition: height 0.3s ease, background 0.3s;
+}
+.container-body-head.shrink {
+    height: 44px;
+    background-color: #d1e3f7;
+}
+.titulo-con-logo h1 {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    font-size: 2.1em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 800;
+    color: #2980b9;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: opacity 0.3s ease;
+}
+.container-body-head.shrink .titulo-con-logo h1 {
+    opacity: 0;
+}
+
+/* ======== MAIN CONTAINER ======== */
+main {
+    max-width: 1400px;
+    margin: 120px auto 0 auto;
+    padding: 40px 40px 60px 40px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.10);
+    position: relative;
+    z-index: 1;
+    min-height: 70vh;
+}
+
+/* ======== BIENVENIDA ======== */
+.bienvenida {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#titulo-inicio {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.marca {
+    color: #2980b9;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.intro-text {
+    font-size: 1.18em;
+    color: #4a4647;
+    margin-bottom: 0;
+}
+
+/* ======== GRID DE MODELOS DESTACADOS ======== */
+.grid-modelos {
+    display: flex;
+    gap: 38px;
+    justify-content: center;
+    margin: 40px 0 50px 0;
+    flex-wrap: wrap;
+}
+
+.card-modelo {
+    background: #fafdff;
+    border-radius: 14px;
+    box-shadow: 0 2px 16px rgba(44,62,80,0.11);
+    text-align: center;
+    padding: 22px 18px 18px 18px;
+    width: 290px;
+    text-decoration: none;
+    color: #2c3e50;
+    transition: box-shadow 0.2s, transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    min-height: 340px;
+}
+
+.card-modelo img {
+    width: 100%;
+    max-width: 240px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+    transition: transform 0.2s;
+    display: block;
+}
+
+.card-modelo h3 {
+    margin: 10px 0 8px 0;
+    color: #2980b9;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.card-modelo p {
+    font-size: 1.05em;
+    color: #4a4647;
+    margin-bottom: 0;
+}
+
+.card-modelo:hover {
+    box-shadow: 0 12px 32px rgba(44,62,80,0.18);
+    transform: translateY(-8px) scale(1.04);
+}
+
+.card-modelo:hover img {
+    transform: scale(1.09);
+}
+
+/* ======== CURIOSIDADES ======== */
+.curiosidades {
+    margin: 50px 0 0 0;
+    background: #f1f6fa;
+    border-radius: 12px;
+    padding: 28px 28px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.04);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.curiosidades h2 {
+    color: #2980b9;
+    margin-bottom: 16px;
+    font-size: 1.25em;
+}
+.lista-curiosidades {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.lista-curiosidades li {
+    margin-bottom: 12px;
+    font-size: 1.08em;
+    color: #4a4647;
+}
+
+/* ======== ENLACE REGISTRO ======== */
+.enlace-registro, #link-registro {
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+.enlace-registro:hover, #link-registro:hover {
+    color: #1c5d8c;
+    text-decoration: underline;
+}
+
+/* ======== RESPONSIVE ======== */
+@media (max-width: 1200px) {
+    main {
+        max-width: 98vw;
+        padding: 24px 2vw 40px 2vw;
+    }
+    .grid-modelos {
+        gap: 22px;
+    }
+    .card-modelo {
+        width: 38vw;
+        min-width: 180px;
+        max-width: 320px;
+    }
+}
+@media (max-width: 900px) {
+    .grid-modelos {
+        gap: 16px;
+    }
+    .card-modelo {
+        width: 80vw;
+        min-width: 160px;
+        max-width: 98vw;
+    }
+    main {
+        padding: 12px 1vw 24px 1vw;
+    }
+}
+@media (max-width: 600px) {
+    main {
+        max-width: 100vw;
+        padding: 8px 0 18px 0;
+        margin-top: 80px;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .grid-modelos {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .card-modelo {
+        width: 96vw;
+        min-width: 0;
+        max-width: 99vw;
+        padding: 10px 2vw 10px 2vw;
+    }
+    .card-modelo img {
+        max-width: 90vw;
+        height: 110px;
+    }
+    .curiosidades {
+        padding: 14px 4vw;
+    }
+}
+
+/* ...código existente... */
+
+/* ======== ESPACIO ENTRE HEADER Y MAIN ======== */
+main {
+    margin-top: 190px; /* Aumenta el espacio desde el top */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 600px) {
+    main {
+        /* ...código existente... */
+        margin-top: 110px; /* Espacio extra en mobile */
+    }
+}
+
+
+/* ======== Historia aviones ======== */
+.banner-hero {
+    width: 100vw;
+    background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
+    color: #fff;
+    padding: 70px 0 32px 0; /* Aumenta el padding-top para bajar el banner */
+    text-align: center;
+    margin-top: 100px; /* Empuja el banner hacia abajo para que no quede debajo del header */
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+    .banner-hero {
+        padding: 50px 0 18px 0;
+        margin-top: 80px;
+    }
+}
+.banner-hero-content h2 {
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.banner-hero-content p {
+    font-size: 1.18em;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/* Historia de la aviación */
+.historia-aviacion {
+    width: 100vw;
+    background: #fafdff;
+    padding: 44px 0 36px 0;
+    margin-top: 40px;
+    border-top: 1px solid #e4ebf5;
+}
+.historia-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #2c3e50;
+}
+.historia-content h2 {
+    color: #2980b9;
+    margin-bottom: 12px;
+}
+.historia-content ul {
+    margin: 18px 0 0 0;
+    padding-left: 18px;
+}
+.historia-content li {
+    margin-bottom: 7px;
+    font-size: 1.05em;
+}
+
+/* Curso de piloto */
+.curso-piloto {
+    width: 100vw;
+    background: linear-gradient(90deg, #e4ebf5 60%, #f7fafd 100%);
+    padding: 44px 0 36px 0;
+    margin-top: 0;
+    border-top: 1px solid #e4ebf5;
+}
+.curso-content {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #2c3e50;
+    text-align: center;
+}
+.curso-content h2 {
+    color: #2980b9;
+    margin-bottom: 12px;
+}
+.curso-content .btn-curso {
+    display: inline-block;
+    margin-top: 10px;
+    background: #2980b9;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.curso-content .btn-curso:hover {
+    background: #1c5d8c;
+}
+.curso-pasos {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+.curso-pasos div {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    padding: 22px 18px;
+    width: 220px;
+    min-width: 180px;
+    text-align: center;
+}
+.curso-pasos span {
+    font-size: 2.2em;
+    display: block;
+    margin-bottom: 8px;
+}
+.curso-pasos h3 {
+    color: #2980b9;
+    margin-bottom: 8px;
+    font-size: 1.08em;
+}
+.curso-pasos p {
+    font-size: 0.98em;
+    color: #4a4647;
+    margin-bottom: 0;
+}
+
+/* Responsive para nuevas secciones */
+@media (max-width: 900px) {
+    .historia-content, .curso-content {
+        max-width: 98vw;
+        padding: 0 2vw;
+    }
+    .curso-pasos {
+        gap: 18px;
+    }
+}
+@media (max-width: 600px) {
+    .banner-hero {
+        padding: 28px 0 18px 0;
+    }
+    .historia-aviacion, .curso-piloto {
+        padding: 22px 0 18px 0;
+    }
+    .curso-pasos {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .curso-pasos div {
+        width: 90vw;
+        min-width: 0;
+        max-width: 98vw;
+        padding: 14px 6vw;
+    }
+}

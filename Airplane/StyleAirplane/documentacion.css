@@ -1,0 +1,159 @@
+/* Banner */
+.req-banner {
+    padding: 150px;
+    width: 100%;
+    max-width: 900px;
+    margin: 60px auto 36px auto;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(41,128,185,0.13), 0 0 0 6px #e0eafc inset;
+    position: relative;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+}
+.req-banner img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    filter: brightness(0.97) contrast(1.09) drop-shadow(0 6px 18px #b3c6e0);
+    transition: filter 0.3s;
+}
+.req-banner img:hover {
+    filter: brightness(1.01) contrast(1.13) drop-shadow(0 10px 30px #a3bde3);
+}
+
+/* Main Section */
+.requisitos-main {
+    max-width: 1000px;
+    background: rgba(255,255,255,0.90);
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(44,62,80,0.18), 0 1.5px 0 #b3c6e0 inset;
+    padding: 48px 38px 44px 38px;
+    margin: 0 auto 40px auto;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(2.5px);
+    border: 1.5px solid #e0eafc;
+    transition: box-shadow 0.3s;
+}
+.requisitos-main:hover {
+    box-shadow: 0 16px 48px rgba(44,62,80,0.22), 0 2.5px 0 #b3c6e0 inset;
+}
+
+.requisitos-main h1 {
+    background: linear-gradient(90deg, #2980b9 0%, #6dd5fa 100%);
+    color: #fff;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 2.3em;
+    padding: 18px 0 14px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(41,128,185,0.18);
+    text-shadow: 0 2px 8px #b3c6e0, 0 1px 0 #fff;
+    border-bottom: 4px solid #b3c6e0;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 1.5px;
+}
+.requisitos-main h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 30%;
+    top: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0.01) 100%);
+    pointer-events: none;
+}
+
+.requisitos-main h2 {
+    color: #2980b9;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    font-size: 1.22em;
+    text-shadow: 0 1px 0 #b3c6e0;
+    border-left: 5px solid #6dd5fa;
+    padding-left: 10px;
+}
+
+.requisitos-main ul, .requisitos-main ol {
+    margin: 0 0 0 32px;
+    color: #34495e;
+    font-size: 1.09em;
+    line-height: 1.7;
+}
+
+.requisitos-main li {
+    margin-bottom: 10px;
+}
+
+.requisitos-main .destacado {
+    background: linear-gradient(90deg, #eaf6fb 0%, #f7fafd 100%);
+    border-left: 6px solid #6dd5fa;
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin: 32px 0;
+    color: #14507a;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(41,128,185,0.08);
+    font-size: 1.08em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: box-shadow 0.3s;
+}
+.requisitos-main .destacado strong {
+    color: #2980b9;
+}
+.requisitos-main .destacado span {
+    font-size: 1.5em;
+    margin-right: 8px;
+}
+
+.requisitos-main .faq-link {
+    color: #2980b9;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s, background 0.2s, border-radius 0.2s;
+    padding: 1px 3px;
+    border-radius: 3px;
+}
+.requisitos-main .faq-link:hover {
+    color: #fff;
+    background: #2980b9;
+    border-radius: 5px;
+}
+
+.requisitos-main p {
+    font-size: 1.13em;
+    color: #34495e;
+    margin-bottom: 0;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .req-banner, .requisitos-main {
+        max-width: 98vw;
+    }
+    .req-banner img {
+        height: 120px;
+    }
+    .requisitos-main {
+        padding: 18px 2vw 24px 2vw;
+    }
+    .requisitos-main h1 {
+        font-size: 1.3em;
+        padding: 10px 0 8px 0;
+    }
+}
+@media (max-width: 600px) {
+    .requisitos-main {
+        padding: 12px 2vw 18px 2vw;
+    }
+    .req-banner img {
+        height: 70px;
+    }
+}

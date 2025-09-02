@@ -1,0 +1,134 @@
+body {
+background: linear-gradient(135deg, #e4ebf5 0%, #f7fafd 100%);
+font-family: 'Segoe UI', Arial, sans-serif;
+color: #2c3e50;
+letter-spacing: 0.01em;
+font-size: 1.08em;
+margin: 0;
+padding: 0;
+}
+
+.main-content-aerolineas {
+margin-top: 90px; /* Espacio para el header fijo */
+padding-bottom: 40px;
+}
+
+h1, .hero-aerolineas h1 {
+text-align: center;
+color: #2980b9;
+font-weight: 900;
+margin-top: 0;
+margin-bottom: 18px;
+letter-spacing: 0.04em;
+}
+
+.hero-aerolineas {
+background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
+color: #fff;
+padding: 60px 0 40px 0;
+text-align: center;
+border-radius: 0 0 32px 32px;
+box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+margin-bottom: 32px;
+}
+
+.hero-aerolineas p {
+font-size: 1.2em;
+margin-bottom: 28px;
+}
+
+.buscador-form {
+display: flex;
+justify-content: center;
+gap: 12px;
+max-width: 500px;
+margin: 0 auto;
+}
+
+.buscador-form input {
+border-radius: 8px;
+border: 2px solid #bfc9d1;
+padding: 12px 18px;
+font-size: 1.08em;
+width: 70%;
+transition: border-color 0.2s;
+}
+
+.buscador-form input:focus {
+border-color: #2980b9;
+outline: none;
+}
+
+.buscador-form button {
+border-radius: 8px;
+font-weight: 700;
+padding: 12px 24px;
+background: linear-gradient(90deg, #2980b9 60%, #6dd5fa 100%);
+border: none;
+color: #fff;
+transition: background 0.2s, box-shadow 0.2s;
+box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+}
+
+.buscador-form button:hover {
+background: linear-gradient(90deg, #2573a6 60%, #4fc3f7 100%);
+box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+}
+
+.tabla-aerolineas-section {
+margin-top: 30px;
+margin-bottom: 60px;
+}
+
+.tabla-aerolineas {
+background: #fff;
+border-radius: 14px;
+overflow: hidden;
+box-shadow: 0 4px 24px rgba(44,62,80,0.09);
+margin-bottom: 32px;
+}
+
+.tabla-aerolineas th {
+background: #e4ebf5;
+color: #1c5d8c;
+font-weight: 800;
+font-size: 1.07em;
+text-align: center;
+}
+
+.tabla-aerolineas td {
+vertical-align: middle;
+text-align: center;
+font-size: 1.02em;
+padding: 10px 6px;
+}
+
+.tabla-aerolineas a {
+color: #2980b9;
+font-weight: 700;
+text-decoration: underline;
+transition: color 0.2s;
+}
+
+.tabla-aerolineas a:hover {
+color: #14507a;
+text-decoration: none;
+}
+
+@media (max-width: 900px) {
+.hero-aerolineas {
+    padding: 30px 0 18px 0;
+    border-radius: 0 0 18px 18px;
+}
+.tabla-aerolineas-section {
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.tabla-aerolineas th, .tabla-aerolineas td {
+    font-size: 0.97em;
+    padding: 8px 2px;
+}
+.main-content-aerolineas {
+    margin-top: 70px;
+}
+}

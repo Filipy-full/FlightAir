@@ -1,0 +1,199 @@
+/* HEADER */
+.container-body-head {
+    width: 100%;
+    background-color: #e4ebf5;
+    box-shadow: 0px 4px 16px rgba(44,62,80,0.10);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 18px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    transition: height 0.3s ease, background 0.3s;
+}
+
+/* Reducir el tamaño del header cuando se hace scroll */
+.container-body-head.shrink {
+    height: 44px;
+    background-color: #d1e3f7;
+}
+
+/* TÍTULO CON LOGO */
+.titulo-con-logo h1 {
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    font-size: 2.1em;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 800;
+    color: #2980b9;
+    letter-spacing: 2px;
+    margin: 0;
+    transition: opacity 0.3s ease;
+}
+
+.container-body-head.shrink .titulo-con-logo h1 {
+    opacity: 0;
+}
+
+/* ENLACES */
+a{
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, text-decoration 0.2s;
+    
+}
+
+a:hover {
+    color: #1c5d8c;
+    text-decoration: none;
+}
+
+/* MENÚ */
+.contenedor-user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BOTONES DE OPCIONES */
+.boton-opciones {
+    margin-top: 100px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    align-items: start;
+    gap: 10px;
+}
+
+.boton-opciones button {
+    padding: 12px 30px;
+    background: transparent;
+    color: #2980b9;
+    font-size: 22px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    font-weight: 600;
+}
+
+.boton-opciones button:hover {
+    background-color: #eaf4fb;
+    color: #1c5d8c;
+    box-shadow: 0 0 8px 0 #bfc9d1;
+}
+
+/* SUBMENÚ PARA AVIONES */
+/* SUBMENÚ PARA AVIONES Y OTROS MENÚS */
+#boton-aerolineas,
+#boton-destino,
+#boton-curso,
+#boton-examen,
+#boton-requisitos {
+    position: relative;
+    display: inline-block;
+}
+
+/* Mostrar submenús al hacer hover en cualquier botón de menú */
+#boton-aerolineas:hover .submenu,
+#boton-destino:hover .submenu,
+#boton-curso:hover .submenu,
+#boton-examen:hover .submenu,
+#boton-requisitos:hover .submenu {
+    display: flex;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 0;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    box-shadow: 0 4px 16px rgba(44,62,80,0.13);
+    flex-direction: column;
+    transition: all 0.3s;
+    z-index: 1001;
+}
+
+.submenu:hover {
+    box-shadow: 0px 5px 16px rgba(44,62,80,0.18);
+}
+
+.submenu a {
+    display: block;
+    padding: 10px 25px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+    text-align: center;
+    font-size: 16px;
+}
+
+.submenu a:hover {
+    background-color: #1c5d8c;
+}
+
+.submenu h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    margin-bottom: 8px;
+}
+
+#boton-destino:hover .submenu {
+    display: flex;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container-body-head {
+        padding: 10px 0;
+        height: 80px;
+    }
+
+    .titulo-con-logo {
+        justify-content: left;
+        padding-left: 0;
+    }
+
+    .titulo-con-logo h1 {
+        font-size: 1.2em;
+        padding-left: 10px;
+    }
+
+    .contenedor-user {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton-opciones {
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+        position: static;
+    }
+
+    .boton-opciones.active {
+        display: flex;
+    }
+
+    .boton-opciones button {
+        width: 100%;
+        max-width: 220px;
+        font-size: 18px;
+        padding: 10px 0;
+    }
+}

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Auxes BC';
+    src: url('fonts/AuxesBC.woff2') format('woff2'),
+         url('fonts/AuxesBC.woff') format('woff'),
+         url('fonts/AuxesBC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Excellence in Motion';
+    src: url('ruta/a/ExcellenceInMotion.woff2') format('woff2'),
+         url('ruta/a/ExcellenceInMotion.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

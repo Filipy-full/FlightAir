@@ -1,0 +1,19 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/4k-plane-in-the-sky-sraa8sshp7bou1p9.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;      
+    background-position: center; 
+    background-attachment: fixed;
+}
+/* Rest of your CSS */
+h1 { color: #2980b9; font-weight: 900; margin: 40px 0 24px 0; text-align: center; }
+.table-container { max-width: 1100px; margin: 0 auto 40px auto; background: #fff; border-radius: 18px; box-shadow: 0 8px 32px rgba(44,62,80,0.13); padding: 32px 18px; }
+table { width: 100%; }
+th { background: #e4ebf5; color: #1c5d8c; font-weight: 800; text-align: center; }
+td { text-align: center; vertical-align: middle; }
+tr:nth-child(even) { background: #f7fafd; }
+@media (max-width: 900px) {
+    .table-container { padding: 10px 2px; }
+    th, td { font-size: 0.95em; }
+}
+.small-text { font-size: 0.95em; color: #888; }
