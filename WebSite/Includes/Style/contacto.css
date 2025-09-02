@@ -5,11 +5,12 @@ body {
     margin: 0;
     min-height: 100vh;
     color: #22304a;
+    margin-top: 120px;
 }
 
 /* Mensaje de contacto */
 .msg-contacto {
-    margin: 200px auto 32px auto;
+    margin: 100px auto 32px auto;
     min-width: 320px;
     max-width: 95vw;
     width: 370px;

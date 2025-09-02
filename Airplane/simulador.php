@@ -7,9 +7,10 @@
     <title>Simulador de Examen Teórico de Aviación | FlightAir</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Airplane/StyleAirplane/simulador.css">
+    <?php include("../WebSite/Includes/header.html"); ?>
 </head>
 <body>
-    <?php include("../WebSite/Includes/header.html"); ?>
+    
     <div class="containerpy-4">
         <div class="sim-header">
             <h1>Simulador de Examen Teórico de Aviación</h1>

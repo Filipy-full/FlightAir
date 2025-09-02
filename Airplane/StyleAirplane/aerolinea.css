@@ -1,15 +1,12 @@
 body {
-background: linear-gradient(135deg, #e4ebf5 0%, #f7fafd 100%);
-font-family: 'Segoe UI', Arial, sans-serif;
-color: #2c3e50;
-letter-spacing: 0.01em;
-font-size: 1.08em;
-margin: 0;
-padding: 0;
+    background-image: url('https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBsYW5lJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww');
+    background-repeat: no-repeat; /* Stops the image from repeating */
+    background-size: cover;      /* Scales the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* (Optional) Keeps the image fixed when scrolling */
+    margin-top: 120px;
 }
-
 .main-content-aerolineas {
-margin-top: 90px; /* Espacio para el header fijo */
 padding-bottom: 40px;
 }
 
